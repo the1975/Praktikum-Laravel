@@ -25,7 +25,14 @@
                         <td>{{ $row->id_admin }}</td>
                         <td>{{ $row->username }}</td>
                         <td>{{ $row->created_at }}</td>
-                        <td></td>
+                        <td class="text-nowrap">
+                            <a href="/admin/{{ $row->id_admin }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                            <form method="post" action="/admin/{{ $row->id_admin }}" class="d-inline" onsubmit="return confirm('Hapus admin ini?')">
+                                @csrf
+                                @method('delete')
+                                <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                            </form>
+                        </td>
                     </tr>
                     @empty
                     <tr><td colspan="4" class="text-center">Belum ada data</td></tr>
