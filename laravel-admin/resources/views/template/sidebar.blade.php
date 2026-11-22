@@ -19,4 +19,7 @@
     <li class="nav-item {{ request()->is('about') ? 'active' : '' }}">
         <a class="nav-link" href="{{ url('/about') }}"><i class="fas fa-fw fa-info-circle"></i><span>About</span></a>
     </li>
+    <li class="nav-item {{ request()->is('admin*') ? 'active' : '' }}">
+        <a class="nav-link" href="{{ url('/admin') }}"><i class="fas fa-fw fa-user-shield"></i><span>Admin</span></a>
+    </li>
 </ul>
