@@ -2,8 +2,8 @@
 
 | Data | Keterangan |
 | --- | --- |
-| Nama | ISI NAMA LENGKAP |
-| NPM | ISI NPM |
+| Nama | Leonardo Yanuarianto |
+| NPM | 2513020074 |
 | Kelas | SI 2C (Sistem Informasi) |
 | Mata Kuliah | Pemrograman Web |
 
