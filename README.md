@@ -13,8 +13,15 @@ Repositori tugas **Pemrograman Web (SI 2C)**. Isinya latihan dari modul *Praktik
 
 | Folder | Isi |
 | --- | --- |
-| `MahasiswaController` | Tugas halaman 12: MahasiswaController (daftar mahasiswa di `/daftar/mahasiswa`) dan kalkulator |
+| `MahasiswaController` | Tugas halaman 12: MahasiswaController (daftar mahasiswa) dan kalkulator luas segitiga |
 | `laravel-admin` | Tugas lanjutan: Sistem Templating, CRUD, Migration, dan Autentikasi |
+
+## Isi Tugas `MahasiswaController`
+
+| Laman | Keterangan |
+| --- | --- |
+| `/daftar/mahasiswa` | Menampilkan daftar mahasiswa (nama, alamat, gender) dari MahasiswaController |
+| `/kalkulator/segitiga` | Form hitung luas segitiga dari KalkulatorController |
 
 ## Isi Tugas `laravel-admin`
 
@@ -27,6 +34,20 @@ Repositori tugas **Pemrograman Web (SI 2C)**. Isinya latihan dari modul *Praktik
 
 Riwayat commit mengikuti nama bab, diawali `[ADD]`, `[EDIT]`, atau `[DEBUG]`.
 
+## Menjalankan `MahasiswaController`
+
+Kebutuhan: PHP 8.3 dan Composer. Database memakai SQLite bawaan Laravel.
+
+    cd MahasiswaController
+    composer install
+    cp .env.example .env
+    php artisan key:generate
+    touch database/database.sqlite
+    php artisan migrate
+    php artisan serve
+
+Buka `http://localhost:8000/daftar/mahasiswa` untuk daftar mahasiswa, dan `http://localhost:8000/kalkulator/segitiga` untuk kalkulator luas segitiga.
+
 ## Menjalankan `laravel-admin`
 
 Kebutuhan: PHP 8.3 dan Composer. Database memakai SQLite bawaan Laravel.
@@ -35,6 +56,7 @@ Kebutuhan: PHP 8.3 dan Composer. Database memakai SQLite bawaan Laravel.
     composer install
     cp .env.example .env
     php artisan key:generate
+    touch database/database.sqlite
     php artisan migrate:fresh --seed
     php artisan serve
 
