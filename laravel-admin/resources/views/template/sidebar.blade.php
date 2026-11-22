@@ -22,4 +22,10 @@
     <li class="nav-item {{ request()->is('admin*') ? 'active' : '' }}">
         <a class="nav-link" href="{{ url('/admin') }}"><i class="fas fa-fw fa-user-shield"></i><span>Admin</span></a>
     </li>
+    <li class="nav-item">
+        <form method="post" action="/logout">
+            @csrf
+            <button type="submit" class="nav-link btn btn-link w-100 text-left border-0"><i class="fas fa-fw fa-sign-out-alt"></i><span>Logout</span></button>
+        </form>
+    </li>
 </ul>
