@@ -1,6 +1,13 @@
 # Praktikum Laravel
 
-Repositori tugas **Pemrograman Web (SI 2A)**. Isinya latihan dari modul *Praktikum Framework Laravel* (Rudy Eko Prasetya), dikerjakan bertahap per bab.
+| Data | Keterangan |
+| --- | --- |
+| Nama | ISI NAMA LENGKAP |
+| NPM | ISI NPM |
+| Kelas | SI 2C (Sistem Informasi) |
+| Mata Kuliah | Pemrograman Web |
+
+Repositori tugas **Pemrograman Web (SI 2C)**. Isinya latihan dari modul *Praktikum Framework Laravel* (Rudy Eko Prasetya), dikerjakan bertahap per bab.
 
 ## Struktur Repositori
 
